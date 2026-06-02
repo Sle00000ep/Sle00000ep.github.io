@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Qian Xu (徐芊)"
+title: "About Me"
 author_profile: true
 redirect_from:
   - /about/
@@ -9,13 +9,11 @@ redirect_from:
 
 # Qian Xu (徐芊)
 
-I am an undergraduate student majoring in **Automation** at the School of Control Science and Engineering, Shandong University. I am currently working at the [Machine Intelligence and System Control Key Laboratory (Ministry of Education)](http://misc.sdu.edu.cn/), under the supervision of Prof. Runmin Cong, and affiliated with the [Multimedia and Vision Processing Group (MVP Group)](https://mvp-group.github.io/).
-
-My research interests lie in **few-shot learning, zero-shot learning, semantic segmentation, foundation models, and embodied AI**.
-
+I am a third-year undergraduate student in the **Automation** program at the School of Control Science and Engineering, Shandong University. 
+Academically, I am fortunate to study under the supervision of Professor [Runmin Cong](https://rmcong.github.io/) and am now affiliated with [Multimedia and Vision Processing Group (MVP Group)](https://mvp-group.github.io/), which is attached to the Key Laboratory of Machine Intelligence and System Control, Ministry of Education.
+My research interests lie in **few-shot defect detction, few-shot learning, zero-shot learning, semantic segmentation, foundation models, and embodied AI**.
 Regarding my future academic plan, I plan to continue pursuing a Master's degree to further explore the aforementioned research fields.
-
-If you are interested in any form of academic cooperation, please feel free to contact me via email: xuqian666@mail.sdu.edu.cn.
+If you are interested in any form of academic cooperation, please feel free to contact me via email: [xuqian666@mail.sdu.edu.cn](xuqian666@mail.sdu.edu.cn)
 
 # :fire: News
 
