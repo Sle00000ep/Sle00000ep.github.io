@@ -13,7 +13,7 @@ I am a third-year undergraduate student in the **Automation** program at the Sch
 Academically, I am fortunate to study under the supervision of Professor [Runmin Cong](https://rmcong.github.io/) and am now affiliated with [Multimedia and Vision Processing Group (MVP Group)](https://mvp-group.github.io/), which is attached to the Key Laboratory of Machine Intelligence and System Control, Ministry of Education.
 My research interests lie in **few-shot defect detction, few-shot learning, zero-shot learning, semantic segmentation, foundation models, and embodied AI**.
 Regarding my future academic plan, I plan to continue pursuing a Master's degree to further explore the aforementioned research fields.
-If you are interested in any form of academic cooperation, please feel free to contact me via email: [xuqian666@mail.sdu.edu.cn](xuqian666@mail.sdu.edu.cn)
+If you are interested in any form of academic cooperation, please feel free to contact me via email: [xuqian666@mail.sdu.edu.cn](mailto:xuqian666@mail.sdu.edu.cn)
 
 # :fire: News
 
