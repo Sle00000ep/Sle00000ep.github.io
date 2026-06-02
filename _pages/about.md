@@ -1,77 +1,70 @@
 ---
 permalink: /
-title: "About Me"
+title: "Qian Xu (徐芊)"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-I am **Qian Xu**, a junior undergraduate student at the School of Control Science and Engineering, Shandong University, majoring in Automation (2023 -- present). My research interests lie in **few-shot learning, zero-shot learning, semantic segmentation, foundation models, and embodied AI**.
+# Qian Xu (徐芊)
 
-Prior to university, I completed my high school education in Ezhou, Hubei Province. I am a member of the Communist Youth League and a passionate learner who thrives on tackling challenging problems across algorithms and systems.
+I am an undergraduate student majoring in **Automation** at the School of Control Science and Engineering, Shandong University. I am currently working at the [Machine Intelligence and System Control Key Laboratory (Ministry of Education)](http://misc.sdu.edu.cn/), under the supervision of Prof. Runmin Cong, and affiliated with the [Multimedia and Vision Processing Group (MVP Group)](https://mvp-group.github.io/).
 
-## Education
+My research interests lie in **few-shot learning, zero-shot learning, semantic segmentation, foundation models, and embodied AI**.
 
-- **Shandong University** | B.Eng. in Automation, School of Control Science and Engineering | Sep. 2023 -- present
+Regarding my future academic plan, I plan to continue pursuing a Master's degree to further explore the aforementioned research fields.
+
+If you are interested in any form of academic cooperation, please feel free to contact me via email: xuqian666@mail.sdu.edu.cn.
+
+# :fire: News
+
+- 2026.05: :tada: Completed intensive Vibe Coding research training: vision inverse dynamics model, sparse matrix graph attention, 2048 AI agent, NatureLM Stage A.
+- 2026.03: :tada: A paper has been accepted by IEEE ICME 2026!
+- 2025.11: :tada: Won National Third Prize at the 19th "Challenge Cup" National Competition (AI+ Special Track).
+- 2025.08: :tada: Won Provincial First Prize at the TI Cup National Electronic Design Competition.
+- 2024.12: :tada: Won Provincial First Prize at the 16th National College Mathematics Competition (Non-Math A).
+
+# :pencil: Publications
+
+**ICME 2026**
+
+**P³-SAM: SAM with Perceptual Parallel Prompt for Few-Shot Strip Steel Surface Defect Segmentation**
+
+**Qian Xu**, Hang Xiong, Anpeng Wang, Runmin Cong, et al.
+
+- This paper proposes the P³-SAM model, which optimizes SAM via two core strategies — Perceptual Optimization Encoding (POE) and Parallel Prompt Generation (PPG) — to address the challenges of few-shot strip steel surface defect segmentation.
+- **Accepted at ICME 2026 (CCF-B).**
+
+# :medal_sports: Honors and Awards
+
+- 2026.06 Shandong University Innovation & Entrepreneurship Outstanding Individual
+- 2025.11 National Third Prize, 19th "Challenge Cup" National Competition (AI+ Special Track) (3rd member)
+- 2025.08 Provincial First Prize, TI Cup National Electronic Design Competition (core member)
+- 2025.06 Shandong University Outstanding Social Practice Report
+- 2025.06 Shandong University Outstanding Social Practice Team
+- 2024.12 Provincial First Prize, 16th National College Mathematics Competition (Non-Math A) (individual)
+- 2024.06 Shandong University Outstanding Communist Youth League Member
+- 2024.06 Shandong University Outstanding Social Practice Team
+- 2024.05 National Third Prize, National College English Competition (Category C) (individual)
+- 2023.09 Shandong University Outstanding Student Scholarship (Second Prize)
+
+# :books: Education
+
+- 2023.09 -- present, **B.Eng. in Automation**, School of Control Science and Engineering, Shandong University, Jinan, China. Advisor: Prof. Runmin Cong
   - Academic GPA rank: **20 / 183** (top **11%**)
   - Overall GPA rank: expected **top 10%**
   - English: CET-4 **602**, CET-6 **543**
-  - Skills: National Computer Rank Certificate (Level 2), C / C++, Python, Vibe Coding
 
-## Research Interests
+# :desktop_computer: Professional Skills
 
-- Few-shot Learning & Zero-shot Learning
-- Semantic Segmentation
-- Foundation Models / Large Vision Models
-- Embodied AI
+- **Languages:** C / C++, Python
+- **Certifications:** National Computer Rank Certificate (Level 2)
+- **Techniques:** Few-shot Learning, Zero-shot Learning, Semantic Segmentation, SAM, Foundation Models, OpenCV
 
-## Research Experience
+# :heart: Volunteering
 
-**Machine Intelligence and System Control Key Laboratory (Ministry of Education), Shandong University** | Mar. 2025 -- present
-
-- **"Finest Detail — Intelligent Steel Surface Defect Detection System"** (Provincial Innovation Project) | **Project Lead**
-  - Developed an intelligent defect detection system for strip steel surfaces using few-shot learning algorithms, addressing challenges in limited industrial sample availability.
-  - Led a team through the full project lifecycle: algorithm development, experimental validation, system platform construction, proposal, mid-term review, quarterly reports, and final delivery — resulting in a **Provincial Outstanding** rating.
-
-- **P3-SAM: SAM with Perceptual Parallel Prompt for Few-Shot Strip Steel Surface Defect Segmentation** | **First Author**
-  - Proposed a novel Perceptual Parallel Prompt framework (P3-SAM) combining few-shot meta-learning with the Segment Anything Model (SAM), achieving state-of-the-art performance on three public few-shot datasets.
-  - On the more challenging Surface Defects-4i dataset, mIoU improved by **12.00%** over prior methods.
-  - Designed two core strategies: (1) perceptual optimization encoding to enhance local contrast and suppress background noise while preserving critical texture details; (2) parallel prompt generation to automatically produce semantic and spatial cues synchronized with the input image.
-  - **Accepted at ICME 2026 (CCF-B).**
-
-- **"Challenge Cup" National Competition — AI+ Special Track** | **Core Member**
-  - Built a mural restoration system using Python and OpenCV for image processing, incorporating damage attention heatmaps, dynamic denoising, and lightweight super-resolution — contributing to a **National Third Prize**.
-
-- **National Invention Patent** — "A Few-Shot Method and System for Strip Steel Surface Defect Detection" | **Second Inventor** (under review)
-  - Co-designed a few-shot segmentation method with applications in model lightweighting, prompt learning, and adaptive few-shot inference.
-
-## Awards & Competitions
-
-- **19th "Challenge Cup" National Undergraduate Academic Science & Technology Competition** — National Third Prize (3rd member) | Nov. 2025
-- **National College English Competition (Category C)** — National Third Prize (individual) | May. 2024
-- **TI Cup National Electronic Design Competition** — Provincial First Prize (core member) | Aug. 2025
-- **16th National College Mathematics Competition (Non-Math Category A)** — Provincial First Prize (individual) | Dec. 2024
-- Shandong University Outstanding Student Scholarship (Second Prize) | 2023
-- Shandong University Outstanding Communist Youth League Member | 2024, 2025, 2026
-- Shandong University Outstanding Social Practice Team | 2024, 2025
-- Shandong University Outstanding Social Practice Report | 2025
-- Shandong University Innovation & Entrepreneurship Outstanding Individual | 2026
-
-## Practical Experience
-
-- **Intelligent Vehicle Training** | Sep. 2024 -- Dec. 2024
-  - Completed intensive training (8+ hours/week): computer vision perception, path planning, and PID control algorithm design and implementation.
-
-- **Research Training (Vibe Coding)** | May 2026
-  - Completed 4 research projects in one day using Vibe Coding and GitHub: vision inverse dynamics model training, sparse matrix graph attention operators, 2048 game AI agent, and NatureLM Stage A single-GPU training.
-
-## Volunteering
-
-- Participated in "Starfire Energy" summer teaching program, "Honoring Heroes" memorial activity, and elderly care home visits — totaling **221 hours** of volunteer service.
-
-## Contact
-
-- **Phone:** 134-7647-2511
-- **Email:** xuqian666@mail.sdu.edu.cn
-- **QQ:** xuqian_sdu@qq.com
+- "Starfire Energy" Summer Teaching Program, Shandong University
+- "Honoring Heroes" Memorial Activity
+- Elderly Care Home Visits
+- Total volunteer hours: **221h**
