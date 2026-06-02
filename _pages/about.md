@@ -17,11 +17,7 @@ If you are interested in any form of academic cooperation, please feel free to c
 
 # :fire: News
 
-- 2026.05: :tada: Completed intensive Vibe Coding research training: vision inverse dynamics model, sparse matrix graph attention, 2048 AI agent, NatureLM Stage A.
 - 2026.03: :tada: A paper has been accepted by IEEE ICME 2026!
-- 2025.11: :tada: Won National Third Prize at the 19th "Challenge Cup" National Competition (AI+ Special Track).
-- 2025.08: :tada: Won Provincial First Prize at the TI Cup National Electronic Design Competition.
-- 2024.12: :tada: Won Provincial First Prize at the 16th National College Mathematics Competition (Non-Math A).
 
 # :pencil: Publications
 
