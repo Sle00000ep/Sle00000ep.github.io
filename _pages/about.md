@@ -2,60 +2,27 @@
 permalink: /
 title: "Qian Xu (徐芊)"
 layout: about
-author_profile: false
+author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
 
-<!-- ========== Profile & About ========== -->
+<!-- ========== About Me ========== -->
 <div class="container">
-  <div class="row g-4 mb-4">
-
-    <!-- Profile Card -->
-    <div class="col-md-4">
-      <div class="card profile-card text-center">
-        <div class="card-body d-flex flex-column align-items-center justify-content-center py-4">
-          {% if site.author.avatar %}
-          <img src="{{ site.baseurl }}/images/{{ site.author.avatar }}"
-               alt="{{ site.author.name }}"
-               class="rounded-circle mb-3"
-               style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.15);">
-          {% else %}
-          <div class="rounded-circle mb-3 d-flex align-items-center justify-content-center"
-               style="width:120px; height:120px; background:#d1e7dd; font-size:2.5rem; font-weight:700; color:#0f5132; box-shadow:0 2px 8px rgba(0,0,0,0.15);">
-            {{ site.author.name | slice: 0 }}
-          </div>
-          {% endif %}
-          <h4 class="mb-1" style="font-family:Raleway,sans-serif; font-weight:700;">{{ site.author.name }}</h4>
-          <p class="mb-1 text-muted" style="font-size:0.85rem;">{{ site.author.bio }}</p>
-          <p class="mb-2 text-muted" style="font-size:0.8rem;">{{ site.author.employer }}</p>
-          <div class="mt-2">
-            {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}" class="btn btn-outline-dark btn-sm me-1" target="_blank">GitHub</a>{% endif %}
-            {% if site.author.email %}<a href="mailto:{{ site.author.email }}" class="btn btn-outline-dark btn-sm">Email</a>{% endif %}
-          </div>
-        </div>
-      </div>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title"><span class="section-icon">:wave:</span> About Me</h5>
+      <p class="about-intro">
+        I am an undergraduate student majoring in <strong>Automation</strong> at the School of Control Science and Engineering, <strong>Shandong University</strong>. I am currently working at the <a href="http://misc.sdu.edu.cn/" target="_blank">Machine Intelligence and System Control Key Laboratory (Ministry of Education)</a>, under the supervision of Prof. Runmin Cong, and affiliated with the <a href="https://mvp-group.github.io/" target="_blank">Multimedia and Vision Processing Group (MVP Group)</a>.
+      </p>
+      <p class="about-intro">
+        My research interests lie in <strong>few-shot learning, zero-shot learning, semantic segmentation, foundation models, and embodied AI</strong>. Regarding my future academic plan, I plan to continue pursuing a Master's degree to further explore the aforementioned research fields.
+      </p>
+      <p class="about-intro mb-0">
+        If you are interested in any form of academic cooperation, please feel free to contact me via email: <a href="mailto:xuqian666@mail.sdu.edu.cn">xuqian666@mail.sdu.edu.cn</a>.
+      </p>
     </div>
-
-    <!-- About Me Card -->
-    <div class="col-md-8">
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"><span class="section-icon">:wave:</span> About Me</h5>
-          <p class="about-intro">
-            I am an undergraduate student majoring in <strong>Automation</strong> at the School of Control Science and Engineering, <strong>Shandong University</strong>. I am currently working at the <a href="http://misc.sdu.edu.cn/" target="_blank">Machine Intelligence and System Control Key Laboratory (Ministry of Education)</a>, under the supervision of Prof. Runmin Cong, and affiliated with the <a href="https://mvp-group.github.io/" target="_blank">Multimedia and Vision Processing Group (MVP Group)</a>.
-          </p>
-          <p class="about-intro">
-            My research interests lie in <strong>few-shot learning, zero-shot learning, semantic segmentation, foundation models, and embodied AI</strong>. Regarding my future academic plan, I plan to continue pursuing a Master's degree to further explore the aforementioned research fields.
-          </p>
-          <p class="about-intro mb-0">
-            If you are interested in any form of academic cooperation, please feel free to contact me via email: <a href="mailto:xuqian666@mail.sdu.edu.cn">xuqian666@mail.sdu.edu.cn</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-
   </div>
 </div>
 
@@ -64,7 +31,6 @@ redirect_from:
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:fire:</span> News</h5>
-
       <div class="news-item">
         <div class="d-flex gap-3">
           <span class="news-date">2026.05</span>
@@ -95,7 +61,6 @@ redirect_from:
           <span class="news-content"><strong>:tada:</strong> Won Provincial First Prize at the 16th National College Mathematics Competition (Non-Math A).</span>
         </div>
       </div>
-
     </div>
   </div>
 </div>
@@ -105,7 +70,6 @@ redirect_from:
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:pencil:</span> Publications</h5>
-
       <div class="mb-3">
         <div class="pub-title">P&#179;-SAM: SAM with Perceptual Parallel Prompt for Few-Shot Strip Steel Surface Defect Segmentation</div>
         <div class="pub-authors"><strong>Qian Xu</strong>, Hang Xiong, Anpeng Wang, Runmin Cong, et al.</div>
@@ -116,7 +80,6 @@ redirect_from:
           This paper proposes P&#179;-SAM, a novel framework that optimizes the Segment Anything Model (SAM) via two core strategies: <strong>Perceptual Optimization Encoding (POE)</strong> and <strong>Parallel Prompt Generation (PPG)</strong>, to address the challenges of few-shot strip steel surface defect segmentation. On the challenging Surface Defects-4i dataset, P&#179;-SAM achieves a <strong>12.00% mIoU improvement</strong> over prior methods.
         </div>
       </div>
-
     </div>
   </div>
 </div>
@@ -126,10 +89,9 @@ redirect_from:
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:medal_sports:</span> Honors and Awards</h5>
-
       <div class="honor-item">
         <span class="honor-year">2026.06</span>
-        <span class="honor-desc">Shandong University Innovation & Entrepreneurship Outstanding Individual</span>
+        <span class="honor-desc">Shandong University Innovation &amp; Entrepreneurship Outstanding Individual</span>
       </div>
       <div class="honor-item">
         <span class="honor-year">2025.11</span>
@@ -176,7 +138,6 @@ redirect_from:
         <span class="honor-desc">Shandong University Outstanding Student Scholarship (Second Prize)</span>
         <span class="honor-level school">School</span>
       </div>
-
     </div>
   </div>
 </div>
@@ -186,16 +147,14 @@ redirect_from:
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:books:</span> Education</h5>
-
       <div class="edu-item">
         <div class="edu-title">B.Eng. in Automation &mdash; School of Control Science and Engineering, Shandong University</div>
         <div class="edu-subtitle">Sep. 2023 &ndash; present &nbsp;|&nbsp; Jinan, China &nbsp;|&nbsp; Advisor: Prof. Runmin Cong</div>
         <div class="edu-detail">
           Academic GPA rank: <strong>20 / 183</strong> (top 11%) &nbsp;&bull;&nbsp; Overall GPA rank: expected <strong>top 10%</strong><br>
-          English: CET-4 <strong>602</strong>, CET-6 <strong>543</strong> &nbsp;&bull;&nbsp; Skills: C/C++, Python, OpenCV, SAM, Foundation Models
+          English: CET-4 <strong>602</strong>, CET-6 <strong>543</strong>
         </div>
       </div>
-
     </div>
   </div>
 </div>
@@ -205,12 +164,10 @@ redirect_from:
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:heart:</span> Volunteering</h5>
-
       <div class="volunteer-item">"Starfire Energy" Summer Teaching Program, Shandong University</div>
       <div class="volunteer-item">"Honoring Heroes" Memorial Activity</div>
       <div class="volunteer-item">Elderly Care Home Visits</div>
       <div class="volunteer-item mt-2"><strong>Total volunteer hours: 221h</strong></div>
-
     </div>
   </div>
 </div>
