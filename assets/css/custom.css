@@ -1,0 +1,271 @@
+/* ============================================================
+   Academic Homepage Card Styles
+   Inspired by luost26/academic-homepage (Bootstrap 5 card design)
+   ============================================================ */
+
+/* ---- Font overrides ---- */
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+
+/* ---- Card (rounded rectangle) styling ---- */
+.card {
+  border-radius: 0.8rem !important;
+  border: none;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Section emoji icon in card title */
+.card-title .section-icon {
+  margin-right: 0.4rem;
+}
+
+/* ---- Section separator line ---- */
+.section-divider {
+  border-top: 1px solid #e9ecef;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- Profile card (top of page) ---- */
+.profile-card {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* ---- About card text ---- */
+.about-intro {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.about-intro:last-child {
+  margin-bottom: 0;
+}
+
+/* ---- News item styling ---- */
+.news-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  font-weight: 700;
+  color: #555;
+  font-size: 0.85rem;
+  min-width: 120px;
+}
+
+.news-content {
+  color: #333;
+  line-height: 1.5;
+}
+
+/* ---- Honor item styling ---- */
+.honor-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.honor-item:last-child {
+  border-bottom: none;
+}
+
+.honor-year {
+  font-weight: 700;
+  color: #555;
+  min-width: 60px;
+  font-size: 0.85rem;
+}
+
+.honor-desc {
+  flex: 1;
+  color: #333;
+  line-height: 1.4;
+}
+
+.honor-level {
+  margin-left: 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.honor-level.national {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.honor-level.provincial {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
+.honor-level.school {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* ---- Education item ---- */
+.edu-item {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.edu-item:last-child {
+  border-bottom: none;
+}
+
+.edu-title {
+  font-weight: 700;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+.edu-subtitle {
+  color: #666;
+  font-size: 0.88rem;
+  margin-top: 0.1rem;
+}
+
+.edu-detail {
+  color: #555;
+  font-size: 0.85rem;
+  margin-top: 0.3rem;
+}
+
+/* ---- Publication item ---- */
+.pub-title {
+  font-weight: 700;
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+}
+
+.pub-authors {
+  color: #555;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.pub-venue {
+  font-style: italic;
+  color: #777;
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.pub-abstract {
+  color: #444;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  margin-top: 0.4rem;
+}
+
+.pub-badge {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.pub-badge.ccf {
+  background-color: #e8f4fd;
+  color: #0a5272;
+}
+
+.pub-badge.arxiv {
+  background-color: #fef9e7;
+  color: #856404;
+}
+
+/* ---- Skill tag ---- */
+.skill-tag {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  margin: 0.15rem;
+  background-color: #e9ecef;
+  color: #495057;
+  font-weight: 500;
+}
+
+.skill-tag.primary {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+/* ---- Volunteer item ---- */
+.volunteer-item {
+  padding: 0.3rem 0;
+  color: #333;
+  font-size: 0.88rem;
+}
+
+/* ---- Contact item ---- */
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 0.3rem 0;
+  font-size: 0.9rem;
+}
+
+.contact-icon {
+  width: 20px;
+  margin-right: 0.5rem;
+  color: #555;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1rem;
+  }
+
+  .news-date {
+    min-width: 80px;
+    font-size: 0.8rem;
+  }
+
+  .honor-item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .honor-level {
+    margin-left: 0;
+    margin-top: 0.2rem;
+  }
+}
