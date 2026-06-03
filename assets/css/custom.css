@@ -21,10 +21,13 @@ h1, h2, h3, h4, h5, h6,
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   margin-bottom: 1.5rem;
   overflow: hidden;
+  background-color: #fff;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-body {
   padding: 1.5rem;
+  color: #333;
 }
 
 .card-title {
@@ -38,13 +41,6 @@ h1, h2, h3, h4, h5, h6,
 /* Section emoji icon in card title */
 .card-title .section-icon {
   margin-right: 0.4rem;
-}
-
-/* ---- Section separator line ---- */
-.section-divider {
-  border-top: 1px solid #e9ecef;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 /* ---- Profile card (top of page) ---- */
@@ -246,6 +242,160 @@ h1, h2, h3, h4, h5, h6,
   width: 20px;
   margin-right: 0.5rem;
   color: #555;
+}
+
+/* ============================================================
+   DARK MODE — matches academicpages dark theme colors
+   ============================================================ */
+
+html[data-theme="dark"] body {
+  background-color: #202124;
+}
+
+html[data-theme="dark"] .card {
+  background-color: #292a2d;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+html[data-theme="dark"] .card-body {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .card-title {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .about-intro {
+  color: #bdc1c6;
+}
+
+html[data-theme="dark"] .news-date {
+  color: #9aa0a6;
+}
+
+html[data-theme="dark"] .news-content {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .news-item {
+  border-bottom-color: #3c4043;
+}
+
+html[data-theme="dark"] .news-item:last-child {
+  border-bottom: none;
+}
+
+html[data-theme="dark"] .honor-year {
+  color: #9aa0a6;
+}
+
+html[data-theme="dark"] .honor-desc {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .honor-item {
+  border-bottom-color: #3c4043;
+}
+
+html[data-theme="dark"] .honor-item:last-child {
+  border-bottom: none;
+}
+
+html[data-theme="dark"] .edu-title {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .edu-subtitle {
+  color: #9aa0a6;
+}
+
+html[data-theme="dark"] .edu-detail {
+  color: #bdc1c6;
+}
+
+html[data-theme="dark"] .edu-item {
+  border-bottom-color: #3c4043;
+}
+
+html[data-theme="dark"] .edu-item:last-child {
+  border-bottom: none;
+}
+
+html[data-theme="dark"] .pub-title {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .pub-authors {
+  color: #9aa0a6;
+}
+
+html[data-theme="dark"] .pub-venue {
+  color: #80868b;
+}
+
+html[data-theme="dark"] .pub-abstract {
+  color: #bdc1c6;
+}
+
+html[data-theme="dark"] .pub-badge.ccf {
+  background-color: #1a3a5c;
+  color: #8ab4f8;
+}
+
+html[data-theme="dark"] .pub-badge.arxiv {
+  background-color: #4a3f00;
+  color: #fdd663;
+}
+
+html[data-theme="dark"] .volunteer-item {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .skill-tag {
+  background-color: #3c4043;
+  color: #bdc1c6;
+}
+
+html[data-theme="dark"] .skill-tag.primary {
+  background-color: #1a3d2b;
+  color: #81c995;
+}
+
+html[data-theme="dark"] .profile-card {
+  background: linear-gradient(135deg, #292a2d 0%, #3c4043 100%);
+}
+
+html[data-theme="dark"] .card a:not(.btn) {
+  color: #8ab4f8;
+}
+
+html[data-theme="dark"] .card a:not(.btn):hover {
+  color: #b4d7ff;
+}
+
+html[data-theme="dark"] .card a:not(.btn):visited {
+  color: #b4d7ff;
+}
+
+/* Honor badge colors for dark mode */
+html[data-theme="dark"] .honor-level.national {
+  background-color: #4a2020;
+  color: #f8d7da;
+}
+
+html[data-theme="dark"] .honor-level.provincial {
+  background-color: #1a3a4a;
+  color: #d1ecf1;
+}
+
+html[data-theme="dark"] .honor-level.school {
+  background-color: #1a3a2b;
+  color: #d4edda;
+}
+
+/* Bootstrap card border override for dark mode */
+html[data-theme="dark"] .card {
+  border: 1px solid #3c4043 !important;
 }
 
 /* ---- Responsive ---- */
