@@ -2,7 +2,7 @@
 permalink: /
 title: "Qian Xu (徐芊)"
 layout: about
-author_profile: false
+author_profile: true
 redirect_from:
   - /about/
   - /about.html
