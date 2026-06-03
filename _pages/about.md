@@ -2,14 +2,14 @@
 permalink: /
 title: "Qian Xu (徐芊)"
 layout: about
-author_profile: true
+author_profile: false
 redirect_from:
   - /about/
   - /about.html
 ---
 
 <!-- ========== About Me ========== -->
-<div class="container">
+<div class="container" id="about">
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:wave:</span> About Me</h5>
@@ -27,7 +27,7 @@ redirect_from:
 </div>
 
 <!-- ========== News ========== -->
-<div class="container">
+<div class="container" id="news">
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:fire:</span> News</h5>
@@ -66,7 +66,7 @@ redirect_from:
 </div>
 
 <!-- ========== Publications ========== -->
-<div class="container">
+<div class="container" id="publications">
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:pencil:</span> Publications</h5>
@@ -85,7 +85,7 @@ redirect_from:
 </div>
 
 <!-- ========== Honors ========== -->
-<div class="container">
+<div class="container" id="honors">
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:medal_sports:</span> Honors and Awards</h5>
@@ -143,7 +143,7 @@ redirect_from:
 </div>
 
 <!-- ========== Education ========== -->
-<div class="container">
+<div class="container" id="education">
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:books:</span> Education</h5>
@@ -160,7 +160,7 @@ redirect_from:
 </div>
 
 <!-- ========== Volunteering ========== -->
-<div class="container">
+<div class="container" id="volunteering">
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:heart:</span> Volunteering</h5>
