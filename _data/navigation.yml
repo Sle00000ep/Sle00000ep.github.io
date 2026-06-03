@@ -1,6 +1,21 @@
 main:
+  - title: "About"
+    url: /#about
+
+  - title: "News"
+    url: /#news
+
   - title: "Publications"
-    url: /publications/
+    url: /#publications
+
+  - title: "Honors"
+    url: /#honors
+
+  - title: "Education"
+    url: /#education
+
+  - title: "Volunteering"
+    url: /#volunteering
 
   - title: "CV"
     url: /cv/
