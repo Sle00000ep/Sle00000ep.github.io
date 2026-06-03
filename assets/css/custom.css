@@ -421,20 +421,56 @@ html[data-theme="dark"] .card {
 }
 
 /* ============================================================
-   FIX 1: Navigation bar — stretch full width
+   FIX 1: Navigation bar — centered
    ============================================================ */
 
-/* Override masthead inner to use full available width */
-.masthead__inner-wrap {
-  max-width: 100% !important;
-  padding-left: 2rem !important;
-  padding-right: 2rem !important;
+.masthead {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
 }
 
-/* Remove the container max-width constraint from the wrapper */
-.wrapper,
+.masthead__inner-wrap {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* ============================================================
+   FIX 2: Page content + sidebar — centered as a unit
+   ============================================================ */
+
 #main {
-  max-width: 100% !important;
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  z-index: 10;
+  width: 200px;
+}
+
+.page {
+  /* Take remaining flex space and center its content */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.page__inner-wrap {
+  max-width: 900px;
+  width: 100%;
 }
 
 /* ============================================================
@@ -444,6 +480,15 @@ html[data-theme="dark"] .card {
 html[data-theme="dark"] .sidebar {
   background-color: #292a2d;
   border-right: 1px solid #3c4043;
+  width: 200px;
+}
+
+html[data-theme="dark"] .page__content {
+  color: #e8eaed;
+}
+
+html[data-theme="dark"] .page__inner-wrap {
+  background-color: #292a2d;
 }
 
 html[data-theme="dark"] .author__name {
