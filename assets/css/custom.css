@@ -445,7 +445,7 @@ html[data-theme="dark"] .card {
    ============================================================ */
 #main {
   display: flex;
-  max-width: 1200px;
+  max-width: 1350px; /* 整体容器加宽至 1350px */
   margin: 0 auto;
   padding-top: 70px;
   position: relative;
@@ -455,9 +455,7 @@ html[data-theme="dark"] .card {
   position: fixed;
   top: 70px;
   left: 50%;
-  /* 原：transform: translateX(-600px); */
-  /* 微调：向左多偏移 10~20px 修正视觉偏左，这里用 -610px */
-  transform: translateX(-610px);
+  transform: translateX(-675px); /* 1350 / 2 = 675，精准居中偏移 */
   width: 200px;
   height: calc(100vh - 70px);
   overflow-y: auto;
@@ -466,15 +464,15 @@ html[data-theme="dark"] .card {
 
 .page {
   flex: 1;
-  margin-left: 220px;
+  margin-left: 220px; /* 给侧边栏留足间距，防止遮挡 */
 }
 
 .page__inner-wrap {
-  max-width: 950px;
+  max-width: 1080px; /* 主内容区同步加宽 */
   width: 100%;
 }
 
-/* 移动端保持不变 */
+/* 移动端适配 保持原有逻辑 */
 @media (max-width: 1024px) {
   #main {
     display: block;
@@ -503,6 +501,7 @@ html[data-theme="dark"] .sidebar {
   border-right: 1px solid #3c4043;
   width: 200px;
 }
+
 html[data-theme="dark"] .page__content {
   color: #e8eaed;
 }
