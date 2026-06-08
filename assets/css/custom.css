@@ -448,12 +448,16 @@ html[data-theme="dark"] .card {
   display: flex;
   justify-content: center;
   padding-top: 70px;
+  max-width: 1350px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .sidebar {
   position: fixed;
   top: 70px;
-  left: 0;
+  left: 50%;
+  transform: translateX(calc(-675px + 100px));
   height: calc(100vh - 70px);
   overflow-y: auto;
   z-index: 10;
@@ -469,7 +473,7 @@ html[data-theme="dark"] .card {
 }
 
 .page__inner-wrap {
-  max-width: 900px;
+  max-width: 950px;
   width: 100%;
 }
 
@@ -481,6 +485,8 @@ html[data-theme="dark"] .sidebar {
   background-color: #292a2d;
   border-right: 1px solid #3c4043;
   width: 200px;
+  left: 50%;
+  transform: translateX(calc(-675px + 100px));
 }
 
 html[data-theme="dark"] .page__content {
