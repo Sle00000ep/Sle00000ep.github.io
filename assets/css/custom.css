@@ -443,59 +443,68 @@ html[data-theme="dark"] .card {
 /* ============================================================
    FIX 2: Page content + sidebar — centered as a unit
    ============================================================ */
-#main {
-  display: flex;
-  max-width: 1350px; /* 整体容器加宽至 1350px */
-  margin: 0 auto;
-  padding-top: 70px;
-  position: relative;
+/* 桌面端：侧边栏固定，主内容区自动填满，整体居中 */
+@media (min-width: 1024px) {
+  #main {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 70px;
+    left: 50%;
+    transform: translateX(calc(-50vw + 100px)); /* 让侧边栏固定在屏幕左侧边缘 */
+    width: 200px;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+    z-index: 10;
+  }
+
+  .page {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px; /* 给侧边栏留出固定宽度 */
+  }
+
+  .page__inner-wrap {
+    max-width: 1000px; /* 主内容区卡片最大宽度，可按需调整 */
+    width: 100%;
+    margin: 0 2rem; /* 左右留白，避免卡片贴边 */
+  }
 }
 
-.sidebar {
-  position: fixed;
-  top: 70px;
-  left: 50%;
-  transform: translateX(-675px); /* 1350 / 2 = 675，精准居中偏移 */
-  width: 200px;
-  height: calc(100vh - 70px);
-  overflow-y: auto;
-  z-index: 10;
-}
-
-.page {
-  flex: 1;
-  margin-left: 220px; /* 给侧边栏留足间距，防止遮挡 */
-}
-
-.page__inner-wrap {
-  max-width: 1080px; /* 主内容区同步加宽 */
-  width: 100%;
-}
-
-/* 移动端适配 保持原有逻辑 */
-@media (max-width: 1024px) {
+/* 移动端：侧边栏置顶，主内容区占满全屏 */
+@media (max-width: 1023px) {
   #main {
     display: block;
-    max-width: 100%;
-    margin: 0;
-    padding: 70px 1rem 0;
+    padding-top: 70px;
+    width: 100%;
   }
 
   .sidebar {
     position: static;
     width: 100%;
     margin-bottom: 2rem;
-    transform: none;
+    padding: 0 1rem;
   }
 
   .page {
-    margin-left: 0;
+    width: 100%;
+  }
+
+  .page__inner-wrap {
+    max-width: 100%;
+    padding: 0 1rem;
   }
 }
 /* ============================================================
    FIX 2: Dark mode — sidebar (author profile) content
    ============================================================ */
-
 html[data-theme="dark"] .sidebar {
   background-color: #292a2d;
   border-right: 1px solid #3c4043;
