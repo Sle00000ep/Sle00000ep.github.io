@@ -753,3 +753,6 @@ html[data-theme="dark"] .page__pagination a {
     overflow-x: hidden !important;
   }
 }
+.page__footer {
+  display: none !important;
+}
