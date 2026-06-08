@@ -14,7 +14,7 @@ redirect_from:
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:wave:</span> About Me</h5>
       <p class="about-intro">
-        I am **Qian Xu (徐芊)** an undergraduate student majoring in Automation at the School of Control Science and Engineering, <strong>Shandong University</strong>. I am fortunate to study as an undergraduate intern under the supervision of Professor <a href="https://rmcong.github.io/"target="_blank">Runmin Cong</a>, and affiliated with the <a href="https://rmcong.github.io/MVPLab.html#" target="_blank">Multimedia and Vision Processing Group (MVP Group)</a>, which is attached to the Key Laboratory of Machine Intelligence and System Control, Ministry of Education.
+        I am <strong>Qian Xu (徐芊)</strong>strong> an undergraduate student majoring in Automation at the School of Control Science and Engineering, <strong>Shandong University</strong>. I am fortunate to study as an undergraduate intern under the supervision of Professor <a href="https://rmcong.github.io/" target="_blank">Runmin Cong</a>, and affiliated with the <a href="https://rmcong.github.io/MVPLab.html#" target="_blank">Multimedia and Vision Processing Group (MVP Group)</a>, which is attached to the Key Laboratory of Machine Intelligence and System Control, Ministry of Education.
       </p>
       <p class="about-intro">
         My research interests lie in <strong>few-shot learning, zero-shot learning, semantic segmentation, foundation models, and embodied AI</strong>. Regarding my future academic plan, I plan to continue pursuing a Master's degree to further explore the aforementioned research fields.
@@ -31,11 +31,6 @@ redirect_from:
   <div class="card">
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:fire:</span> News</h5>
-      <div class="news-item">
-        <div class="d-flex gap-3">
-          <span class="news-date">2026.05</span>
-        </div>
-      </div>
       <div class="news-item">
         <div class="d-flex gap-3">
           <span class="news-date">2026.03</span>
@@ -76,7 +71,7 @@ redirect_from:
         <span class="pub-badge ccf">CCF-B</span>
         <span class="pub-badge arxiv">ICME 2026</span>
         <div class="pub-abstract">
-          Few-shot semantic segmentation (FSS) of strip steel surface defects (S&#179;D) has posed significant challenges distinct from natural scenes. Unlike natural images, S&#179;D task exhibits unique characteristics including low local contrast, uneven illumination, and complex fine-grained texture patterns. Although recent methods based on Segment Anything Model (SAM) have shown promise in FSS on natural images by leveraging SAM’s powerful pre-trained representations, these unique industrial characteristics of S&#179;D images lead to performance drop when directly applying SAM to industrial defect scenarios. In this paper, we propose a novel Perceptual Parallel Prompt (P&#179;) framework that empowers SAM, creating the P&#179;-SAM model to address these challenges through two core strategies. First, we develop a **Perceptual-Optimized Encoding (POE) strategy** that enhances local contrast and preserves critical texture details for S&#179;D segmentation. Second, we introduce the **Parallel Prompt Generator (PPG) strategy** that simultaneously generates both semantic and spatial prompts, enabling comprehensive guidance for SAM’s decoder across varying images. Extensive experiments on three few-shot S&#179;D benchmarks demonstrate that P&#179;-SAM achieves state-of-the-art performance, with particularly notable improvements of 12.00% in mIoU on Surface Defects-4i dataset.
+          Few-shot semantic segmentation (FSS) of strip steel surface defects (S&#179;D) has posed significant challenges distinct from natural scenes. Unlike natural images, S&#179;D task exhibits unique characteristics including low local contrast, uneven illumination, and complex fine-grained texture patterns. Although recent methods based on Segment Anything Model (SAM) have shown promise in FSS on natural images by leveraging SAM’s powerful pre-trained representations, these unique industrial characteristics of S&#179;D images lead to performance drop when directly applying SAM to industrial defect scenarios. In this paper, we propose a novel Perceptual Parallel Prompt (P&#179;) framework that empowers SAM, creating the P&#179;-SAM model to address these challenges through two core strategies. First, we develop a <strong>Perceptual-Optimized Encoding (POE) strategy</strong>strong that enhances local contrast and preserves critical texture details for S&#179;D segmentation. Second, we introduce the <strong>Parallel Prompt Generator (PPG) strategy</strong> that simultaneously generates both semantic and spatial prompts, enabling comprehensive guidance for SAM’s decoder across varying images. Extensive experiments on three few-shot S&#179;D benchmarks demonstrate that P&#179;-SAM achieves state-of-the-art performance, with particularly notable improvements of 12.00% in mIoU on Surface Defects-4i dataset.
         </div>
       </div>
     </div>
@@ -145,11 +140,13 @@ redirect_from:
 <div class="container" id="education">
   <div class="card">
     <div class="card-body">
-      <h5 class="card-title"><span class="section-icon">:books:</span> Education</h5>
+     <h5 class="card-title d-flex align-items-center gap-2">
+        <span class="section-icon">:books:</span> Education
+        <img src="assets/images/SDU.jpg" alt="SDU" style="height: 28px; width: auto;">
+      </h5>
       <div class="edu-item">
         <div class="edu-title">B.Eng. in Automation &mdash; School of Control Science and Engineering, Shandong University</div>
         <div class="edu-subtitle">Sep. 2023 &ndash; present &nbsp;|&nbsp; Jinan, China &nbsp;|&nbsp; Advisor: Prof. Runmin Cong</div>
-        </div>
       </div>
     </div>
   </div>
