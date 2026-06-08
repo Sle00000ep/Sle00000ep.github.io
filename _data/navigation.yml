@@ -14,8 +14,5 @@ main:
   - title: "Education"
     url: /#education
 
-  - title: "Volunteering"
-    url: /#volunteering
-
   - title: "CV"
     url: /cv/
