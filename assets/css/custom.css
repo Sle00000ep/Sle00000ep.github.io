@@ -490,7 +490,6 @@ html[data-theme="dark"] .card {
   }
 
   .sidebar {
-    /* 1. 强制清除所有大屏样式，从根源解决空白 */
     position: static !important;
     top: auto !important;
     left: auto !important;
@@ -501,47 +500,50 @@ html[data-theme="dark"] .card {
     margin-bottom: 2rem;
     overflow-y: visible !important;
 
-    /* 2. 改成横排布局 */
+    /* 关键：横排+两端对齐 */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 1rem 0 !important;
+  }
+
+  /* 隐藏Follow按钮和下拉框 */
+  .sidebar .btn,
+  .sidebar .author__urls-wrapper button,
+  .sidebar .author__urls-wrapper ul {
+    display: none !important;
+  }
+
+  /* 左侧：头像+名字+简介 */
+  .sidebar .author__avatar {
+    width: 60px !important;
+    height: 60px !important;
+    margin: 0 !important;
+    margin-right: 1rem !important;
+  }
+
+  .sidebar .author__info {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
   }
 
-  /* 隐藏 Follow 按钮 */
-  .sidebar .btn {
-    display: none !important;
-  }
-
-  /* 头像大小适配横排 */
-  .sidebar .author__avatar {
-    flex-shrink: 0;
-    width: 80px;
-    height: 80px;
-    margin: 0;
-  }
-
-  /* 隐藏文字信息，只保留图标 */
   .sidebar .author__name,
-  .sidebar .author__bio,
-  .sidebar .author__urls-wrapper button {
-    display: none !important;
+  .sidebar .author__bio {
+    display: block !important;
+    margin: 0 !important;
   }
 
-  /* 图标改成横向排列 */
-  .sidebar .author__urls {
+  /* 右侧：直接显示图标（不用下拉） */
+  .sidebar .social-icons {
     display: flex !important;
-    gap: 1.5rem;
-    margin-top: 0;
-    margin-left: auto; /* 让图标靠右对齐 */
+    gap: 1.5rem !important;
+    margin-left: auto;
   }
 
-  .sidebar .author__urls li {
-    display: inline-block;
-  }
-
-  .sidebar .author__urls a {
-    font-size: 1.5rem;
+  .sidebar .social-icons a {
+    font-size: 1.3rem;
+    color: inherit;
   }
 
   .page {
