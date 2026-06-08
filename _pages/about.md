@@ -142,10 +142,12 @@ redirect_from:
     <div class="card-body">
      <h5 class="card-title d-flex align-items-center gap-2">
         <span class="section-icon">:books:</span> Education
-        <img src="images/SDU.jpg" alt="SDU" style="height: 28px; width: auto;">
       </h5>
-      <div class="edu-item">
-        <div class="edu-title">B.Eng. in Automation &mdash; School of Control Science and Engineering, Shandong University</div>
+      <!-- 图文同行 垂直居中 -->
+      <div class="edu-item d-flex align-items-center gap-3">
+        <img src="images/SDU.jpg" alt="SDU" style="height: 45px; width: auto;">
+        <div>
+        <div class="edu-title">Undergraduate student in Automation School of Control Science and Engineering, Shandong University</div>
         <div class="edu-subtitle">Sep. 2023 &ndash; present &nbsp;|&nbsp; Jinan, China &nbsp;|&nbsp; Advisor: Prof. Runmin Cong</div>
       </div>
     </div>
