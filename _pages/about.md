@@ -154,15 +154,3 @@ redirect_from:
   </div>
 </div>
 
-<!-- ========== Volunteering ========== -->
-<div class="container" id="volunteering">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title"><span class="section-icon">:heart:</span> Volunteering</h5>
-      <div class="volunteer-item">"Starfire Energy" Summer Teaching Program, Shandong University</div>
-      <div class="volunteer-item">"Honoring Heroes" Memorial Activity</div>
-      <div class="volunteer-item">Elderly Care Home Visits</div>
-      <div class="volunteer-item mt-2"><strong>Total volunteer hours: 221h</strong></div>
-    </div>
-  </div>
-</div>
