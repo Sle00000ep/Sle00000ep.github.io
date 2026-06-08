@@ -14,7 +14,7 @@ redirect_from:
     <div class="card-body">
       <h5 class="card-title"><span class="section-icon">:wave:</span> About Me</h5>
       <p class="about-intro">
-        I am <strong>Qian Xu (徐芊)</strong> an undergraduate student majoring in Automation at the School of Control Science and Engineering, <strong>Shandong University</strong>. I am fortunate to study as an undergraduate intern under the supervision of Professor <a href="https://rmcong.github.io/" target="_blank">Runmin Cong</a>, and affiliated with the <a href="https://rmcong.github.io/MVPLab.html#" target="_blank">Multimedia and Vision Processing Group (MVP Group)</a>, which is attached to the Key Laboratory of Machine Intelligence and System Control, Ministry of Education.
+        I am <strong>Qian Xu (徐芊)</strong>, an undergraduate student majoring in Automation at the School of Control Science and Engineering, <strong>Shandong University</strong>. I am fortunate to study as an undergraduate intern under the supervision of Professor <a href="https://rmcong.github.io/" target="_blank">Runmin Cong</a>, and affiliated with the <a href="https://rmcong.github.io/MVPLab.html#" target="_blank">Multimedia and Vision Processing Group (MVP Group)</a>, which is attached to the Key Laboratory of Machine Intelligence and System Control, Ministry of Education.
       </p>
       <p class="about-intro">
         My research interests lie in <strong>few-shot learning, zero-shot learning, semantic segmentation, foundation models, and embodied AI</strong>. Regarding my future academic plan, I plan to continue pursuing a Master's degree to further explore the aforementioned research fields.
