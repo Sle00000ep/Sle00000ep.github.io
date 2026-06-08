@@ -463,15 +463,12 @@ html[data-theme="dark"] .card {
 .sidebar {
   position: fixed;
   top: 70px;
-  margin-left: calc(50% - 700px); /* 对应 .container-wrap 的 max-width:1400px */
+  left: calc(50% - 700px); /* 改用 left 直接定位，和容器 max-width 对应 */
   width: 200px;
   height: calc(100vh - 70px);
   overflow-y: auto;
   z-index: 10;
-  left: auto !important;
-  transform: none !important;
 }
-
 /* 主内容区域：自动填充，卡片可拓宽 */
 .page {
   flex: 1;
