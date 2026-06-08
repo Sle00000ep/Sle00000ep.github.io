@@ -443,57 +443,59 @@ html[data-theme="dark"] .card {
 /* ============================================================
    FIX 2: Page content + sidebar — centered as a unit
    ============================================================ */
-/* 桌面端：侧边栏固定，主内容区自动填满，整体居中 */
-@media (min-width: 1024px) {
-  #main {
-    display: flex;
-    justify-content: center;
-    padding-top: 70px;
-    width: 100%;
-    max-width: 100%;
+/* 大屏 >= 992px：两栏布局，内容充分横向扩展 */
+@media (min-width: 992px) {
+  body {
+    overflow-x: visible;
   }
 
+  #main {
+    width: 100%;
+    padding-top: 70px;
+    display: block;
+  }
+
+  /* 侧边栏固定在浏览器左侧，不遮挡 */
   .sidebar {
     position: fixed;
     top: 70px;
-    left: 50%;
-    transform: translateX(calc(-50vw + 100px)); /* 让侧边栏固定在屏幕左侧边缘 */
+    left: 0;
     width: 200px;
     height: calc(100vh - 70px);
     overflow-y: auto;
     z-index: 10;
   }
 
+  /* 主内容整体右移，避开侧边栏，左右无限扩展 */
   .page {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    margin-left: 200px; /* 给侧边栏留出固定宽度 */
+    margin-left: 200px;
+    width: calc(100% - 200px);
   }
 
+  /* 移除内容最大宽度限制 → 卡片向两侧拉满页面 */
   .page__inner-wrap {
-    max-width: 1000px; /* 主内容区卡片最大宽度，可按需调整 */
+    max-width: none;
     width: 100%;
-    margin: 0 2rem; /* 左右留白，避免卡片贴边 */
+    padding: 0 2rem;
   }
 }
 
-/* 移动端：侧边栏置顶，主内容区占满全屏 */
-@media (max-width: 1023px) {
+/* 小屏 < 992px：侧边栏跑到顶部，内容整行通栏 */
+@media (max-width: 991px) {
   #main {
-    display: block;
-    padding-top: 70px;
     width: 100%;
+    padding-top: 70px;
   }
 
   .sidebar {
     position: static;
     width: 100%;
-    margin-bottom: 2rem;
     padding: 0 1rem;
+    margin-bottom: 2rem;
   }
 
   .page {
+    margin-left: 0;
     width: 100%;
   }
 
