@@ -491,9 +491,12 @@ html[data-theme="dark"] .card {
   }
 
   .sidebar {
-    position: static;
-    width: 100%;
-    margin-left: 0;
+    position: static !important; /* 强制清除fixed定位 */
+    top: auto !important;
+    left: auto !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+    height: auto !important; /* 关键：让高度自动适应内容，不撑出空白 */
     margin-bottom: 2rem;
   }
 
