@@ -142,7 +142,7 @@ redirect_from:
     <div class="card-body">
      <h5 class="card-title d-flex align-items-center gap-2">
         <span class="section-icon">:books:</span> Education
-        <img src="assets/images/SDU.jpg" alt="SDU" style="height: 28px; width: auto;">
+        <img src="images/SDU.jpg" alt="SDU" style="height: 28px; width: auto;">
       </h5>
       <div class="edu-item">
         <div class="edu-title">B.Eng. in Automation &mdash; School of Control Science and Engineering, Shandong University</div>
