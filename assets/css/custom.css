@@ -443,59 +443,63 @@ html[data-theme="dark"] .card {
 /* ============================================================
    FIX 2: Page content + sidebar — centered as a unit
    ============================================================ */
-/* 桌面端：两栏作为整体居中，主内容区可横向扩展 */
-@media (min-width: 992px) {
-  #main {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-top: 70px;
-  }
-
-  /* 侧边栏：作为整体的一部分，居中容器内固定 */
-  .sidebar {
-    position: sticky;
-    top: 70px;
-    width: 200px;
-    flex-shrink: 0;
-    height: calc(100vh - 70px);
-    overflow-y: auto;
-    margin-right: 2rem;
-  }
-
-  /* 主内容区：移除最大宽度限制，可随窗口扩展 */
-  .page {
-    flex: 1;
-    max-width: 1000px; /* 主内容区卡片最大宽度，可按需调整 */
-    width: 100%;
-  }
-
-  .page__inner-wrap {
-    width: 100%;
-    padding: 0;
-  }
+#main {
+  padding-top: 70px;
+  width: 100%;
 }
 
-/* 移动端：侧边栏自动置顶，内容通栏 */
-@media (max-width: 991px) {
-  #main {
-    display: block;
-    padding-top: 70px;
+/* 整体容器：侧边栏+主内容 统一居中 */
+.container-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 1400px; /* 整体最大宽度，可改大继续拓宽 */
+  margin: 0 auto;
+  gap: 2rem; /* 侧边栏和主内容间距 */
+  width: 100%;
+}
+
+/* 侧边栏：容器内粘性固定，不贴屏幕边缘 */
+.sidebar {
+  position: sticky;
+  top: 70px;
+  width: 200px;
+  flex-shrink: 0; /* 禁止被压缩 */
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  /* 强制清除原有固定定位 */
+  left: auto !important;
+  transform: none !important;
+  position-anchor: none;
+}
+
+/* 主内容区域：自动填充，卡片可拓宽 */
+.page {
+  flex: 1;
+  min-width: 0;
+}
+
+.page__inner-wrap {
+  max-width: 1150px; /* 中间卡片区域最大宽度，改数值即可拓宽 */
+  width: 100%;
+}
+
+/* 响应式：窗口缩小 → 侧边栏置顶，内容通栏 */
+@media (max-width: 992px) {
+  .container-wrap {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 1rem;
   }
 
   .sidebar {
+    position: static;
     width: 100%;
     margin-bottom: 2rem;
-    padding: 0 1rem;
-  }
-
-  .page {
-    width: 100%;
   }
 
   .page__inner-wrap {
-    width: 100%;
-    padding: 0 1rem;
+    max-width: 100%;
   }
 }
 /* ============================================================
