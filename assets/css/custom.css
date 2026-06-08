@@ -461,16 +461,15 @@ html[data-theme="dark"] .card {
 
 /* 侧边栏：容器内粘性固定，不贴屏幕边缘 */
 .sidebar {
-  position: sticky;
+  position: fixed;
   top: 70px;
+  margin-left: calc(50% - 700px); /* 对应 .container-wrap 的 max-width:1400px */
   width: 200px;
-  flex-shrink: 0; /* 禁止被压缩 */
   height: calc(100vh - 70px);
   overflow-y: auto;
-  /* 强制清除原有固定定位 */
+  z-index: 10;
   left: auto !important;
   transform: none !important;
-  position-anchor: none;
 }
 
 /* 主内容区域：自动填充，卡片可拓宽 */
