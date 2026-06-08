@@ -458,22 +458,21 @@ html[data-theme="dark"] .card {
   width: 100%;
 }
 
-/* 侧边栏：固定在容器内，不依赖calc计算 */
+/* 大屏侧边栏：固定居中容器左侧 */
 .sidebar {
   position: fixed;
   top: 70px;
   left: 50%;
-  margin-left: -700px; /* 直接用负margin对齐容器中线，比calc更稳定 */
+  margin-left: -700px;
   width: 200px;
   height: calc(100vh - 70px);
   overflow-y: auto;
   z-index: 10;
 }
 
-/* 主内容区域：和侧边栏严格对齐 */
 .page {
   flex: 1;
-  margin-left: 200px; /* 给侧边栏留出固定宽度 */
+  margin-left: 200px;
   min-width: 0;
 }
 
@@ -482,7 +481,7 @@ html[data-theme="dark"] .card {
   width: 100%;
 }
 
-/* 响应式：窗口缩小 → 侧边栏置顶 */
+/* 小屏下：彻底重写侧边栏样式 */
 @media (max-width: 992px) {
   .container-wrap {
     flex-direction: column;
@@ -491,13 +490,46 @@ html[data-theme="dark"] .card {
   }
 
   .sidebar {
-    position: static !important; /* 强制清除fixed定位 */
+    /* 1. 强制清除所有大屏样式，从根源解决空白 */
+    position: static !important;
     top: auto !important;
     left: auto !important;
     margin-left: 0 !important;
     width: 100% !important;
-    height: auto !important; /* 关键：让高度自动适应内容，不撑出空白 */
+    height: auto !important; /* 关键：高度随内容自适应 */
+    max-height: none !important;
     margin-bottom: 2rem;
+    overflow-y: visible !important;
+
+    /* 2. 改成横排布局，和目标网站一致 */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  /* 隐藏 Follow 按钮 */
+  .sidebar .btn {
+    display: none !important;
+  }
+
+  /* 头像大小适配横排 */
+  .sidebar .author__avatar {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  /* 文字信息区域 */
+  .sidebar .author__info {
+    flex: 1;
+  }
+
+  /* 图标改成横向排列 */
+  .sidebar .author__urls {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem;
   }
 
   .page {
