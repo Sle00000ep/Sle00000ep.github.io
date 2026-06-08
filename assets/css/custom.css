@@ -443,64 +443,58 @@ html[data-theme="dark"] .card {
 /* ============================================================
    FIX 2: Page content + sidebar — centered as a unit
    ============================================================ */
-/* 大屏 >= 992px：两栏布局，内容充分横向扩展 */
+/* 桌面端：两栏作为整体居中，主内容区可横向扩展 */
 @media (min-width: 992px) {
-  body {
-    overflow-x: visible;
-  }
-
   #main {
+    display: flex;
+    justify-content: center;
     width: 100%;
     padding-top: 70px;
-    display: block;
   }
 
-  /* 侧边栏固定在浏览器左侧，不遮挡 */
+  /* 侧边栏：作为整体的一部分，居中容器内固定 */
   .sidebar {
-    position: fixed;
+    position: sticky;
     top: 70px;
-    left: 0;
     width: 200px;
+    flex-shrink: 0;
     height: calc(100vh - 70px);
     overflow-y: auto;
-    z-index: 10;
+    margin-right: 2rem;
   }
 
-  /* 主内容整体右移，避开侧边栏，左右无限扩展 */
+  /* 主内容区：移除最大宽度限制，可随窗口扩展 */
   .page {
-    margin-left: 200px;
-    width: calc(100% - 200px);
+    flex: 1;
+    max-width: 1000px; /* 主内容区卡片最大宽度，可按需调整 */
+    width: 100%;
   }
 
-  /* 移除内容最大宽度限制 → 卡片向两侧拉满页面 */
   .page__inner-wrap {
-    max-width: none;
     width: 100%;
-    padding: 0 2rem;
+    padding: 0;
   }
 }
 
-/* 小屏 < 992px：侧边栏跑到顶部，内容整行通栏 */
+/* 移动端：侧边栏自动置顶，内容通栏 */
 @media (max-width: 991px) {
   #main {
-    width: 100%;
+    display: block;
     padding-top: 70px;
   }
 
   .sidebar {
-    position: static;
     width: 100%;
-    padding: 0 1rem;
     margin-bottom: 2rem;
+    padding: 0 1rem;
   }
 
   .page {
-    margin-left: 0;
     width: 100%;
   }
 
   .page__inner-wrap {
-    max-width: 100%;
+    width: 100%;
     padding: 0 1rem;
   }
 }
