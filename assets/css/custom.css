@@ -443,70 +443,66 @@ html[data-theme="dark"] .card {
 /* ============================================================
    FIX 2: Page content + sidebar — centered as a unit
    ============================================================ */
-/* 桌面端：两栏并排，整体居中 */
-@media (min-width: 768px) {
-  #main {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding-top: 70px;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 2rem; /* 侧边栏和主内容之间的间距 */
-  }
-
-  .sidebar {
-    position: sticky; /* 改为 sticky，随页面滚动，不固定在屏幕边缘 */
-    top: 70px;
-    width: 200px;
-    flex-shrink: 0; /* 防止侧边栏被压缩 */
-    height: auto;
-    overflow-y: auto;
-  }
-
-  .page {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    min-width: 0;
-  }
-
-  .page__inner-wrap {
-    max-width: 900px;
-    width: 100%;
-  }
+/* 1. 整个页面容器居中，宽度固定 */
+#main {
+  display: flex;
+  max-width: 1200px; /* 整个页面的总宽度，可按需调整 */
+  margin: 0 auto;    /* 让整个容器水平居中 */
+  padding-top: 70px; /* 顶部导航栏的高度，保持不变 */
+  position: relative;
 }
 
-/* 移动端：侧边栏自动置顶，和主内容上下排列 */
-@media (max-width: 767px) {
+/* 2. 侧边栏固定在居中容器的左侧，不随页面滚动 */
+.sidebar {
+  position: fixed;
+  top: 70px;
+  left: 50%; /* 先定位到屏幕中间 */
+  transform: translateX(-600px); /* 向左偏移，刚好停在容器的左边缘 */
+  width: 200px;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  z-index: 10;
+}
+
+/* 3. 主内容区在容器的右侧，给侧边栏留出空间 */
+.page {
+  flex: 1;
+  margin-left: 220px; /* 侧边栏宽度 + 20px 间距，防止内容被挡住 */
+}
+
+.page__inner-wrap {
+  max-width: 950px;
+  width: 100%;
+}
+
+/* 4. 移动端适配：侧边栏不再固定，自动跑到顶部 */
+@media (max-width: 1024px) {
   #main {
     display: block;
-    padding-top: 70px;
+    max-width: 100%;
+    margin: 0;
+    padding: 70px 1rem 0;
   }
 
   .sidebar {
-    position: static; /* 取消固定，变成普通流布局 */
+    position: static;
     width: 100%;
     margin-bottom: 2rem;
+    transform: none;
   }
 
   .page {
-    width: 100%;
-  }
-
-  .page__inner-wrap {
-    max-width: 100%;
-    padding: 0 1rem;
+    margin-left: 0;
   }
 }
-
 /* ============================================================
    FIX 2: Dark mode — sidebar (author profile) content
    ============================================================ */
 
 html[data-theme="dark"] .sidebar {
-  background-color: transparent; /* 取消固定侧边栏的背景色 */
-  border-right: none;
+  background-color: #292a2d;
+  border-right: 1px solid #3c4043;
+  width: 200px;
 }
 
 html[data-theme="dark"] .page__content {
