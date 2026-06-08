@@ -443,38 +443,61 @@ html[data-theme="dark"] .card {
 /* ============================================================
    FIX 2: Page content + sidebar — centered as a unit
    ============================================================ */
+/* 桌面端：两栏并排，整体居中 */
+@media (min-width: 768px) {
+  #main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 70px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2rem; /* 侧边栏和主内容之间的间距 */
+  }
 
-#main {
-  display: flex;
-  justify-content: center;
-  padding-top: 70px;
-  max-width: 1350px;
-  margin: 0 auto;
-  width: 100%;
+  .sidebar {
+    position: sticky; /* 改为 sticky，随页面滚动，不固定在屏幕边缘 */
+    top: 70px;
+    width: 200px;
+    flex-shrink: 0; /* 防止侧边栏被压缩 */
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .page {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 0;
+  }
+
+  .page__inner-wrap {
+    max-width: 900px;
+    width: 100%;
+  }
 }
 
-.sidebar {
-  position: fixed;
-  top: 70px;
-  left: 50%;
-  transform: translateX(calc(-675px + 100px));
-  height: calc(100vh - 70px);
-  overflow-y: auto;
-  z-index: 10;
-  width: 200px;
-}
+/* 移动端：侧边栏自动置顶，和主内容上下排列 */
+@media (max-width: 767px) {
+  #main {
+    display: block;
+    padding-top: 70px;
+  }
 
-.page {
-  /* Take remaining flex space and center its content */
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  min-width: 0;
-}
+  .sidebar {
+    position: static; /* 取消固定，变成普通流布局 */
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 
-.page__inner-wrap {
-  max-width: 950px;
-  width: 100%;
+  .page {
+    width: 100%;
+  }
+
+  .page__inner-wrap {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
 }
 
 /* ============================================================
@@ -482,11 +505,8 @@ html[data-theme="dark"] .card {
    ============================================================ */
 
 html[data-theme="dark"] .sidebar {
-  background-color: #292a2d;
-  border-right: 1px solid #3c4043;
-  width: 200px;
-  left: 50%;
-  transform: translateX(calc(-675px + 100px));
+  background-color: transparent; /* 取消固定侧边栏的背景色 */
+  border-right: none;
 }
 
 html[data-theme="dark"] .page__content {
