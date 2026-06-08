@@ -443,31 +443,30 @@ html[data-theme="dark"] .card {
 /* ============================================================
    FIX 2: Page content + sidebar — centered as a unit
    ============================================================ */
-/* 1. 整个页面容器居中，宽度固定 */
 #main {
   display: flex;
-  max-width: 1200px; /* 整个页面的总宽度，可按需调整 */
-  margin: 0 auto;    /* 让整个容器水平居中 */
-  padding-top: 70px; /* 顶部导航栏的高度，保持不变 */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
   position: relative;
 }
 
-/* 2. 侧边栏固定在居中容器的左侧，不随页面滚动 */
 .sidebar {
   position: fixed;
   top: 70px;
-  left: 50%; /* 先定位到屏幕中间 */
-  transform: translateX(-600px); /* 向左偏移，刚好停在容器的左边缘 */
+  left: 50%;
+  /* 原：transform: translateX(-600px); */
+  /* 微调：向左多偏移 10~20px 修正视觉偏左，这里用 -610px */
+  transform: translateX(-610px);
   width: 200px;
   height: calc(100vh - 70px);
   overflow-y: auto;
   z-index: 10;
 }
 
-/* 3. 主内容区在容器的右侧，给侧边栏留出空间 */
 .page {
   flex: 1;
-  margin-left: 220px; /* 侧边栏宽度 + 20px 间距，防止内容被挡住 */
+  margin-left: 220px;
 }
 
 .page__inner-wrap {
@@ -475,7 +474,7 @@ html[data-theme="dark"] .card {
   width: 100%;
 }
 
-/* 4. 移动端适配：侧边栏不再固定，自动跑到顶部 */
+/* 移动端保持不变 */
 @media (max-width: 1024px) {
   #main {
     display: block;
@@ -504,7 +503,6 @@ html[data-theme="dark"] .sidebar {
   border-right: 1px solid #3c4043;
   width: 200px;
 }
-
 html[data-theme="dark"] .page__content {
   color: #e8eaed;
 }
