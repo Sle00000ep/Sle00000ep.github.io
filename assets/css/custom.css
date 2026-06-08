@@ -496,12 +496,12 @@ html[data-theme="dark"] .card {
     left: auto !important;
     margin-left: 0 !important;
     width: 100% !important;
-    height: auto !important; /* 关键：高度随内容自适应 */
+    height: auto !important;
     max-height: none !important;
     margin-bottom: 2rem;
     overflow-y: visible !important;
 
-    /* 2. 改成横排布局，和目标网站一致 */
+    /* 2. 改成横排布局 */
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -518,18 +518,30 @@ html[data-theme="dark"] .card {
     flex-shrink: 0;
     width: 80px;
     height: 80px;
+    margin: 0;
   }
 
-  /* 文字信息区域 */
-  .sidebar .author__info {
-    flex: 1;
+  /* 隐藏文字信息，只保留图标 */
+  .sidebar .author__name,
+  .sidebar .author__bio,
+  .sidebar .author__urls-wrapper button {
+    display: none !important;
   }
 
   /* 图标改成横向排列 */
   .sidebar .author__urls {
-    display: flex;
-    gap: 1rem;
-    margin-top: 0.5rem;
+    display: flex !important;
+    gap: 1.5rem;
+    margin-top: 0;
+    margin-left: auto; /* 让图标靠右对齐 */
+  }
+
+  .sidebar .author__urls li {
+    display: inline-block;
+  }
+
+  .sidebar .author__urls a {
+    font-size: 1.5rem;
   }
 
   .page {
