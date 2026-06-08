@@ -448,39 +448,41 @@ html[data-theme="dark"] .card {
   width: 100%;
 }
 
-/* 整体容器：侧边栏+主内容 统一居中 */
+/* 整体容器：侧边栏+主内容 居中对齐 */
 .container-wrap {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  max-width: 1400px; /* 整体最大宽度，可改大继续拓宽 */
+  max-width: 1400px;
   margin: 0 auto;
-  gap: 2rem; /* 侧边栏和主内容间距 */
   width: 100%;
 }
 
-/* 侧边栏：容器内粘性固定，不贴屏幕边缘 */
+/* 侧边栏：固定在容器内，不依赖calc计算 */
 .sidebar {
   position: fixed;
   top: 70px;
-  left: calc(50% - 700px); /* 改用 left 直接定位，和容器 max-width 对应 */
+  left: 50%;
+  margin-left: -700px; /* 直接用负margin对齐容器中线，比calc更稳定 */
   width: 200px;
   height: calc(100vh - 70px);
   overflow-y: auto;
   z-index: 10;
 }
-/* 主内容区域：自动填充，卡片可拓宽 */
+
+/* 主内容区域：和侧边栏严格对齐 */
 .page {
   flex: 1;
+  margin-left: 200px; /* 给侧边栏留出固定宽度 */
   min-width: 0;
 }
 
 .page__inner-wrap {
-  max-width: 1150px; /* 中间卡片区域最大宽度，改数值即可拓宽 */
+  max-width: 1150px;
   width: 100%;
 }
 
-/* 响应式：窗口缩小 → 侧边栏置顶，内容通栏 */
+/* 响应式：窗口缩小 → 侧边栏置顶 */
 @media (max-width: 992px) {
   .container-wrap {
     flex-direction: column;
@@ -491,7 +493,12 @@ html[data-theme="dark"] .card {
   .sidebar {
     position: static;
     width: 100%;
+    margin-left: 0;
     margin-bottom: 2rem;
+  }
+
+  .page {
+    margin-left: 0;
   }
 
   .page__inner-wrap {
