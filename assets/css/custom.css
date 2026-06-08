@@ -717,3 +717,39 @@ html[data-theme="dark"] .page__pagination a {
 .card-body {
   padding: 1.5rem !important;
 }
+
+/* 1. 大屏默认：左右布局（保持原样） */
+.wrapper {
+  display: flex;
+}
+
+/* 2. 小屏断点：你要的“侧边栏跑到顶部横排” */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* 垂直叠：sidebar在上，main在下 */
+  }
+
+  .sidebar {
+    width: 100% !important; /* 侧边栏占满宽 */
+    max-width: 100% !important;
+    position: relative !important; /* 取消固定定位 */
+    margin: 0 0 20px 0 !important; /* 下边留间距 */
+    padding: 15px !important;
+    /* 让侧边栏里的内容（头像、社交图标）横着排 */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .main {
+    width: 100% !important;
+    margin-left: 0 !important; /* 取消左边距 */
+  }
+
+  /* 防止横向滚动 */
+  body, .wrapper, .container {
+    overflow-x: hidden !important;
+  }
+}
